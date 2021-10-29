@@ -1,10 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 :root {
-  --primary-color: #007af3;
+  --primary-color: #33b5e5;
+}
+
+[class^="col"] {
+  padding: 1rem;
+  background-color: #33b5e5;
+  border: 2px solid #fff;
+  color: #fff;
+  text-align: center;
+}
+
+[class^="col"] img {
+  width: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
 }
 
 body {
-  background: #f2f2f2;
   margin: 0;
   font-family: "Poppins";
 }
@@ -185,7 +199,11 @@ input[type="submit"] {
   display: inline-block;
   padding: 0.8em 2em;
   width: unset;
-  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  -webkit-box-shadow: 5px 5px 3px gray;
+          box-shadow: 5px 5px 3px gray;
 }
 
 iframe {
@@ -327,7 +345,7 @@ nav li a:hover {
   ul.features-list li {
     font-size: 1.4em;
   }
-  ul.features-list libefore {
+  ul.features-list li:before {
     width: 30px;
     height: 30px;
   }
@@ -367,9 +385,6 @@ nav li a:hover {
   .contact-right iframe {
     height: 100%;
   }
-}
-
-@media only screen and (min-width: 1080px) {
   .features-section::before {
     content: "";
     position: absolute;
